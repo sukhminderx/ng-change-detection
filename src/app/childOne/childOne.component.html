@@ -1,0 +1,15 @@
+<section>
+    <h1>Child One</h1>
+    <p>
+        {{child.name}}
+    </p>
+    <p>
+        {{self.name}}
+    </p>
+    <div>
+      <button (click)="changeSelf()">Change Self</button>
+    </div>
+    <div>
+      <button (click)="emit.emit()">Emit from child</button>
+    </div>
+</section>
